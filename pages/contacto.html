@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="dos, ruedas, dosruedas, ooruedas, bicicleta, bici, Puebla, renta, Cholula, contacto, mensaje" >
+    <meta name="description" content="Te puedes poner en contacto de manera muy sencilla con dosruedas, al enviar un mensaje mediante la página web o escribiendo por redes sociales.">
+    <title>Nosotros</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,400;0,600;0,700;1,100;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+
+<body> 
+    <header>
+        <div id="logoContainer">
+         <a href="../index.html" id="logoHeader"><img src="../images/PNG/Logo-Negativo.png" alt="Logo dos ruedas" id="logoImg"></a>
+        </div>
+ 
+        <nav id="navbar"> 
+ 
+        <ul id="navLinks">
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="rentaunabici.html">Renta una bici</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+            <li><a href="contacto.html" id="linkContacto">Contacto</a></li>
+        </ul>
+     
+        </nav>
+ 
+    </header>
+
+
+   <main>
+        <section id="contactanos">
+           <h1><span>Contacto</span></h1>  <!-- Este es el nombre del proyecto sobre el cuál haré el proyecto final -->
+           <p>¿Tienes alguna duda? </p>
+           <p>¡Escríbenos!</p>
+        </section>
+
+        <section id="contactoFormulario">
+        <form action="" method="POST">
+            <fieldset>
+                <h2>¡Déjanos un mensaje!</h2>
+                <div class="row">
+                    <label for="nombre" class="col">Nombre: </label>
+                    <input type="text" placeholder="Ingresa tu nombre" name="nombre" class="form-label">
+
+                    <label for="correo" class="col">Email: </label>
+                    <input type="email" placeholder="Ingresa tu correo electrónico" class="form-label" class="form-label">
+
+                    <label for="nombre" class="col">Teléfono: </label>
+                    <input type="tel" placeholder="Nos comunicaremos por Whatsapp contigo" class="form-label" class="row">
+                </div>
+
+                <br>
+                <br>
+
+                <div class="row">
+                    <label for="mensaje">Cuéntanos</label>
+                    <br>
+                    <textarea name="mensaje" id="textoMensaje" cols="30" rows="10" placeholder="Déjanos un mensaje o déjanos tu @instagram para contactarte."></textarea>
+                </div>
+                
+                <br>
+                <br>
+
+                <div>
+                    <p><strong>¿Qué paquete te interesa?</strong></p>
+                    <select name="paquete">
+                    <option value="elige" selected disabled>Elige tu paquete</option>
+                    <option value="paq1">Paquete 1</option>
+                    <option value="paq2">Paquete 2</option>
+                    <option value="paq3">Paquete 3</option>
+                </select>
+                </div>
+                
+
+                <br>
+                <br>
+
+                <div>
+                    <p><strong>¿De qué ciudad nos escribes?</strong></p>
+                    <div class="form-check">
+                        <input type="radio" name="ciudad" value="chol_and">
+                        <label for="chol_and">San Andrés Cholula</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="ciudad" value="chol_ped">
+                        <label for="chol_ped">San Pedro Cholula</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="ciudad" value="pue">
+                        <label for="pue">Puebla</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="ciudad" value="cdmx">
+                        <label for="cdmx">CDMX</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="ciudad" value="tlax">
+                        <label for="tlax">Tlaxcala</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="ciudad" value="otra">
+                        <label for="otra">Otra ciudad</label>
+                    </div>
+                </div>
+                
+
+                <br>
+                <br>
+
+                <div>
+                    <p><strong>¿Por dónde te podemos contactar?</strong></p>
+                    <div>
+                        <input type="checkbox" name="telefono" value="telefono">
+                        <label for="telefono">Teléfono (llamada)</label>
+                    </div>
+                   
+                    <div>
+                        <input type="checkbox" name="wa" value="wa">
+                        <label for="wa">Whatsapp</label>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" name="instagram" value="instagram">
+                        <label for="instagram">Instagram (DM)</label>
+                    </div>
+                </div>
+                
+
+                <br>
+                <br>
+                <!--<div class="row" id="botones">
+                    <input type="reset" name="reset" value="Borrar mis datos" class="btn btn-danger" id="boton-borrar">
+
+                    <input type="button" name="enviar" value="Enviar" class="btn btn-primary" id="boton-enviar">
+                </div>-->
+
+            </fieldset>
+    </section>
+
+
+
+    <div class="row" id="botones">
+        <button type="button" class="btn btn-primary btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop"id="boton-borrar">
+            Borrar mis datos
+          </button>
+          
+        <input type="button" name="enviar" value="Enviar" class="btn btn-primary" id="boton-enviar">
+    </div>
+
+    <div class="modal fade modalText" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title modalTextTitle" id="staticBackdropLabel">¿Estás seguro que seas borrar los datos?</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               Da click en el botón "Borrar campos" y después da click en "Cerrar" para volver a la página. <br><br>
+               Si no quieres borrar los datos ingresados sólo da click en "Cerrar"
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="reset" class="btn btn-primary btn-danger">Borrar campos</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+   </main>
+
+<!--<input type="reset" name="reset" value="Borrar mis datos" class="btn btn-danger" ">-->
+   <footer>
+        
+    <h3>¡Contácanos!</h3>
+        <a href="https://www.instagram.com/ooruedas/" target="_blank" id="iconInsta">
+            <img class="snIcons" src="data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF8xXyIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwIC0xLjk4MiAtMS44NDQgMCAtMTMyLjUyMiAtNTEuMDc3KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSItMzcuMTA2IiB4Mj0iLTI2LjU1NSIgeTE9Ii03Mi43MDUiIHkyPSItODQuMDQ3Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZDUiLz48c3RvcCBvZmZzZXQ9Ii41IiBzdG9wLWNvbG9yPSIjZmY1NDNlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYzgzN2FiIi8+PC9saW5lYXJHcmFkaWVudD48cGF0aCBkPSJtMS41IDEuNjMzYy0xLjg4NiAxLjk1OS0xLjUgNC4wNC0xLjUgMTAuMzYyIDAgNS4yNS0uOTE2IDEwLjUxMyAzLjg3OCAxMS43NTIgMS40OTcuMzg1IDE0Ljc2MS4zODUgMTYuMjU2LS4wMDIgMS45OTYtLjUxNSAzLjYyLTIuMTM0IDMuODQyLTQuOTU3LjAzMS0uMzk0LjAzMS0xMy4xODUtLjAwMS0xMy41ODctLjIzNi0zLjAwNy0yLjA4Ny00Ljc0LTQuNTI2LTUuMDkxLS41NTktLjA4MS0uNjcxLS4xMDUtMy41MzktLjExLTEwLjE3My4wMDUtMTIuNDAzLS40NDgtMTQuNDEgMS42MzN6IiBmaWxsPSJ1cmwoI1NWR0lEXzFfKSIvPjxwYXRoIGQ9Im0xMS45OTggMy4xMzljLTMuNjMxIDAtNy4wNzktLjMyMy04LjM5NiAzLjA1Ny0uNTQ0IDEuMzk2LS40NjUgMy4yMDktLjQ2NSA1LjgwNSAwIDIuMjc4LS4wNzMgNC40MTkuNDY1IDUuODA0IDEuMzE0IDMuMzgyIDQuNzkgMy4wNTggOC4zOTQgMy4wNTggMy40NzcgMCA3LjA2Mi4zNjIgOC4zOTUtMy4wNTguNTQ1LTEuNDEuNDY1LTMuMTk2LjQ2NS01LjgwNCAwLTMuNDYyLjE5MS01LjY5Ny0xLjQ4OC03LjM3NS0xLjctMS43LTMuOTk5LTEuNDg3LTcuMzc0LTEuNDg3em0tLjc5NCAxLjU5N2M3LjU3NC0uMDEyIDguNTM4LS44NTQgOC4wMDYgMTAuODQzLS4xODkgNC4xMzctMy4zMzkgMy42ODMtNy4yMTEgMy42ODMtNy4wNiAwLTcuMjYzLS4yMDItNy4yNjMtNy4yNjUgMC03LjE0NS41Ni03LjI1NyA2LjQ2OC03LjI2M3ptNS41MjQgMS40NzFjLS41ODcgMC0xLjA2My40NzYtMS4wNjMgMS4wNjNzLjQ3NiAxLjA2MyAxLjA2MyAxLjA2MyAxLjA2My0uNDc2IDEuMDYzLTEuMDYzLS40NzYtMS4wNjMtMS4wNjMtMS4wNjN6bS00LjczIDEuMjQzYy0yLjUxMyAwLTQuNTUgMi4wMzgtNC41NSA0LjU1MXMyLjAzNyA0LjU1IDQuNTUgNC41NSA0LjU0OS0yLjAzNyA0LjU0OS00LjU1LTIuMDM2LTQuNTUxLTQuNTQ5LTQuNTUxem0wIDEuNTk3YzMuOTA1IDAgMy45MSA1LjkwOCAwIDUuOTA4LTMuOTA0IDAtMy45MS01LjkwOCAwLTUuOTA4eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg=="   />
+            </a>
+        <a href="" target="_blank" id="iconTwitter">
+            <img class="snIcons" src="data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMjEuNTUyIDcuNzQ5YzAtLjIxNy0uMDA4LS40MjgtLjAxOC0uNjM2Ljk3Ni0uNjkzIDEuNzk3LTEuNTU4IDIuNDY2LTIuNTU0di0uMDAxYy0uODkzLjM5MS0xLjg0My42NTEtMi44MzUuNzc3IDEuMDItLjYwOSAxLjc5OS0xLjU2NiAyLjE2NS0yLjcxOS0uOTUxLjU2Ny0yLjAwMS45NjctMy4xMiAxLjE5MS0uOTAzLS45NjItMi4xOS0xLjU1Ny0zLjU5NC0xLjU1Ny0yLjcyNCAwLTQuOTE3IDIuMjExLTQuOTE3IDQuOTIxIDAgLjM5LjAzMy43NjUuMTE0IDEuMTIyLTQuMDktLjItNy43MS0yLjE2LTEwLjE0Mi01LjE0Ny0uNDI0LjczNy0uNjc0IDEuNTgtLjY3NCAyLjQ4NyAwIDEuNzA0Ljg3NyAzLjIxNCAyLjE4NiA0LjA4OS0uNzkxLS4wMTUtMS41NjYtLjI0NS0yLjIyMy0uNjA2di4wNTRjMCAyLjM5MSAxLjcwNSA0LjM3NyAzLjk0MiA0LjgzNS0uNzUyLjIwNi0xLjY3OC4xOTgtMi4yMjEuMDc4LjYzNyAxLjk0OCAyLjQ0NyAzLjM4MSA0LjU5NyAzLjQyOC0xLjY3NCAxLjMwOS0zLjggMi4wOTgtNi4xMDEgMi4wOTgtLjQwMyAwLS43OS0uMDE4LTEuMTc3LS4wNjcgMi4xOCAxLjQwNSA0Ljc2MiAyLjIwOCA3LjU0OCAyLjIwOCA5LjA1NCAwIDE0LjAwNC03LjUgMTQuMDA0LTE0LjAwMXoiIGZpbGw9IiM1NWFjZWUiLz48L3N2Zz4=" />
+        </a>
+        <a  href="https://wa.me/5219932080032?text=¡Hola%20dos%20ruedas!%20¿Me%20podrías%20dar%20más%20información?" target="_blank" id="iconWa">
+            <img class="snIcons" src="data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMjAuNTIgMy40NDljLTIuMjgtMi4yMDQtNS4yOC0zLjQ0OS04LjQ3NS0zLjQ0OS05LjE3IDAtMTQuOTI4IDkuOTM1LTEwLjM0OSAxNy44MzhsLTEuNjk2IDYuMTYyIDYuMzM1LTEuNjUyYzIuNzYgMS40OTEgNS4wMjEgMS4zNTkgNS43MTYgMS40NDcgMTAuNjMzIDAgMTUuOTI2LTEyLjg2NCA4LjQ1NC0yMC4zMDd6IiBmaWxsPSIjZWNlZmYxIi8+PHBhdGggZD0ibTEyLjA2NyAyMS43NTEtLjAwNi0uMDAxaC0uMDE2Yy0zLjE4MiAwLTUuMjE1LTEuNTA3LTUuNDE1LTEuNTk0bC0zLjc1Ljk3NSAxLjAwNS0zLjY0NS0uMjM5LS4zNzVjLS45OS0xLjU3Ni0xLjUxNi0zLjM5MS0xLjUxNi01LjI2IDAtOC43OTMgMTAuNzQ1LTEzLjE5IDE2Ljk2My02Ljk3NSA2LjIwMyA2LjE1IDEuODQ4IDE2Ljg3NS03LjAyNiAxNi44NzV6IiBmaWxsPSIjNGNhZjUwIi8+PHBhdGggZD0ibTE3LjUwNyAxNC4zMDctLjAwOS4wNzVjLS4zMDEtLjE1LTEuNzY3LS44NjctMi4wNC0uOTY2LS42MTMtLjIyNy0uNDQtLjAzNi0xLjYxNyAxLjMxMi0uMTc1LjE5NS0uMzQ5LjIxLS42NDYuMDc1LS4zLS4xNS0xLjI2My0uNDY1LTIuNDAzLTEuNDg1LS44ODgtLjc5NS0xLjQ4NC0xLjc3LTEuNjYtMi4wNy0uMjkzLS41MDYuMzItLjU3OC44NzgtMS42MzQuMS0uMjEuMDQ5LS4zNzUtLjAyNS0uNTI0LS4wNzUtLjE1LS42NzItMS42Mi0uOTIyLTIuMjA2LS4yNC0uNTg0LS40ODctLjUxLS42NzItLjUxLS41NzYtLjA1LS45OTctLjA0Mi0xLjM2OC4zNDQtMS42MTQgMS43NzQtMS4yMDcgMy42MDQuMTc0IDUuNTUgMi43MTQgMy41NTIgNC4xNiA0LjIwNiA2LjgwNCA1LjExNC43MTQuMjI3IDEuMzY1LjE5NSAxLjg4LjEyMS41NzQtLjA5MSAxLjc2Ny0uNzIxIDIuMDE2LTEuNDI2LjI1NS0uNzA1LjI1NS0xLjI5LjE4LTEuNDI1LS4wNzQtLjEzNS0uMjctLjIxLS41Ny0uMzQ1eiIgZmlsbD0iI2ZhZmFmYSIvPjwvc3ZnPg==" />
+        </a>
+
+    <img src="../images/PNG/Logo-Negativo -H.png" alt="Logo dos ruedas footer" id="logoFooter">
+
+    <p>Todos los derechos reservados.</p>
+
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script> 
+</body>
+
+
+</html>

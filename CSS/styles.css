@@ -1,0 +1,493 @@
+
+/* G L O B A L S */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html {
+    font-size: 62.5%;  /* 1 rem = 10 px */
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    background-color:#433C45;
+    margin: 0;
+    font-size: 1.5rem;
+}
+h1, h2, h3 {
+    text-align: center;
+    margin: 20px 0;
+}
+h1 {
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.5rem;
+}
+h2 {
+    text-decoration: underline;
+    font-size: 3rem;
+}
+section {
+    margin-bottom: 70px;
+}
+
+/* Navigation bar */
+#logoImg {
+    width: 60%;
+}
+@media only screen and (min-width: 480px) {
+    #logoImg {
+        width: 30%;
+    }
+}
+@media only screen and (minwidth: 1200px) {
+    #logoImg {
+        width: 40%;
+    }
+}
+#logoContainer {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+}
+#logoHeader{
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+#navbar {
+    background-color: #f1cd48;
+    margin: 0;
+    padding: 2rem 0;
+}
+#navbar a{
+    text-decoration: none;
+    color: #524a2e;
+    font-weight: 600;
+    background-color: transparent;
+    border-top: 0;
+    border-right: 2.5rem;
+    border-bottom: 0;
+    border-left: 2.5rem;
+    border-color: transparent;
+}
+
+@media only screen and (min-width: 480px) {
+    #navbar a {
+        padding: 0 0;
+    }
+    #navbar a:hover{
+        color: #000;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #navbar a:hover{
+        color: black;
+        text-decoration: underline;
+    }
+}
+
+#navbar li{
+    list-style: none;
+}
+#navbar ul{
+    margin: 0;
+}
+#navLinks {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+}
+@media only screen and (min-width: 768px) {
+    #navLinks {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+/* Footer */
+footer {
+    background-color: #111111;
+    display: flex;
+    flex-direction: column;
+}
+footer a{
+    text-decoration: none;
+}
+.snIcons {
+    width: 25%;;
+}
+@keyframes icons__anim {
+    0%{ transform: rotate(0deg); }
+    50%{ transform: rotate(180deg); }
+    100%{ transform: rotate(360deg); }
+}
+.snIcons:hover {
+    animation-name: icons__anim;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+
+#iconInsta, #iconTwitter, #iconWa {
+    width: 45%;
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    margin: auto;
+}
+#logoFooter {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+footer p{
+    text-align: center;
+    margin: 0;
+    align-self: center;
+}
+.contentCenter {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+@media only screen and (min-width: 768px) {
+    footer {
+        background-color: #111111;
+        display: grid;
+        grid-template: 3fr 4fr 3fr / 1fr 1fr 1fr 1fr 5fr 5fr;
+    }
+    footer a{
+        text-decoration: none;
+    }
+    .snIcons {
+        width: 25%;
+    }
+    footer h3{
+        grid-row: 1 / 2;
+        grid-column: 2 / 5;
+        margin-bottom: 0;
+    }
+    #iconInsta, #iconTwitter, #iconWa {
+        width: 120%;
+    }
+    #iconInsta {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    #iconTwitter {
+        grid-row: 2 / 3;
+        grid-column: 3 / 4;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    #iconWa {
+        grid-row: 2 / 3;
+        grid-column: 4 / 5;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    #logoFooter {
+        width: 40%;
+        grid-row: 1 / 4;
+        grid-column: 6 / 7;
+        margin: auto;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    footer p{
+        grid-row: 3 / 4;
+        grid-column: 1 / 7;
+        text-align: center;
+        margin: 0;
+        align-self: center;
+    }
+    .contentCenter {
+        margin-top: 3rem;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+}
+
+
+
+
+
+/* I N D E X */
+#introduccion {
+    margin-top: 4%;
+}
+h1 span{
+    color: black;
+    background-color: #F7E01F;
+    padding: 0 1rem;
+}
+#introTexto {
+    text-align: center;
+    font-style: italic;
+    margin: 0 20%;
+    font-size: 2rem;
+}
+/* ¿Qué te ofrecemos? */
+.recuadrosOfrecemos {
+    background-color: rgb(219, 219, 219);
+    color: black;
+    border-radius: 8px;
+    margin: 10px 2rem;
+    margin-right: 0rem;
+    padding: 3rem 3rem;
+}
+@media only screen and (min-width: 768px) {
+    #conjuntoRecuadros {
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
+
+/* Galería de imágenes */
+#galeria {
+    margin-top: 100px;
+}
+#galeriaContainer {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    margin: 0 10%;
+    margin-bottom: 50px;
+}
+.imagenesGaleria {
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 10%;
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.8);
+}
+@media (max-width: 768px) {
+    #galeriaContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .imagenesGaleria {
+        width: 80%;
+    }
+}
+#carruselTamano img{
+    margin: auto;
+}
+#carruselTamano {
+    margin-top: 6rem;
+}
+.footerIndex{
+    margin-top: 3rem;
+}
+
+/* N O S O T R O S */
+#quienesSomos, #mision, #vision {
+    margin: 0 25% 10% 25%;
+    font-size: 1.8rem;
+}
+#quienesSomos {
+    margin-top: 4%;
+}
+#youtube {
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+    #navbar #linkNosotros {
+        color: white;
+        font-weight: bold;
+        background-color: #000;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #navbar #linkNosotros {
+        color: white;
+        font-weight: bold;
+        background-color: #000000;
+        padding: 2.5rem 0;
+    }
+}
+/* R E N T A   U N A   B I C I */
+#rentaUnaBici {
+    margin: 0 25%;
+    margin-top: 4%
+}
+#rentaUnaBici p{
+    font-size: 1.8rem;
+}
+#queTeOfrecemos {
+    margin: 50px 10%;
+}
+#queTeOfrecemos li,
+#nuestrosServicios li{
+    list-style: square;
+}
+.contentCenter h4{
+    margin-top: 5rem;
+    font-size: 2rem;
+}
+#iconWaRentaUnaBici {
+    width: 4%;
+    margin-bottom: 6rem;
+    margin-top: 2rem;
+}
+#serviciosTable {
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+    #navbar #linkRentaUnaBici {
+        color: white;
+        font-weight: bold;
+        background-color: #000;
+    }
+    #iconWaRentaUnaBici {
+        width: 12%;
+        margin-bottom: 6rem;
+        margin-top: 2rem;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #navbar #linkRentaUnaBici {
+        color: white;
+        font-weight: bold;
+        background-color: #000000;
+        padding: 2.5rem 0;
+    }
+    .containerAccordion {
+        margin: 0 20%;
+    }
+}
+
+
+/* Tabla */
+#nuestrosServicios {
+    margin: 0 5%;
+}
+.tableCenter{
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    background-color: rgb(240, 237, 235);
+    color: black;
+}
+th {
+    background-color: #181818;
+    color: white;
+}
+td {
+    padding: 0.5rem 3rem;
+}
+
+
+
+
+
+/* U B I C A C I Ó N */
+#ubicacion {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+#ubicacion p{
+    margin-bottom: 2.5%;
+}
+@media only screen and (max-width: 768px) {
+    #navbar #linkUbicacion {
+        color: white;
+        font-weight: bold;
+        background-color: #000;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #navbar #linkUbicacion {
+        color: white;
+        font-weight: bold;
+        background-color: #000000;
+        padding: 2.5rem 0;
+    }
+    #ubicacion p{
+        margin-bottom: 5%;
+    }
+}
+
+
+
+/* C O N T A C T O */
+@media only screen and (max-width: 768px) {
+    #navbar #linkContacto {
+        color: white;
+        font-weight: bold;
+        background-color: #000;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #navbar #linkContacto {
+        color: white;
+        font-weight: bold;
+        background-color: #000000;
+        padding: 2.5rem 0;
+    }
+}
+
+#contactanos {
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 20px;
+}
+#contactanos p{
+    font-size: 1.8rem;
+}
+#contactoFormulario {
+    margin: 0 20%;
+    margin-bottom: 50px;
+    align-self: center;;
+}
+#ciudades{
+    display: flex;
+    flex-direction: column;
+}
+#botones {
+    display: flex;
+    flex-direction: column;
+
+}
+#boton-borrar, #boton-enviar {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 5%;
+}
+@media only screen and (min-width: 768px) {
+    #boton-borrar, #boton-enviar {
+        font-weight: bold;
+        font-size: 2rem;
+        width: 25%;
+        margin-bottom: 2%;
+    }
+}
+.modalText {
+    color: black;
+}
+.modalTextTitle {
+    text-align: center;
+    font-weight: bold;
+}
